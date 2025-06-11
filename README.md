@@ -3,7 +3,9 @@ Front-end часть приложения для фитнес-центра Adren
 
 # Установка
 git clone https://github.com/KristinaGordey/adrenalin-fe
+
 cd Adrenalin
+
 npm install
 
 # Запуск
