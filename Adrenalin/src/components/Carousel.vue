@@ -1,8 +1,10 @@
 <template>
   <swiper :modules="modules" :pagination="{ clickable: true }">
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
+    <swiper-slide><img src="../assets/slider/1.jpg" /></swiper-slide>
+    <swiper-slide><img src="../assets/slider/2.jpg" /></swiper-slide>
+    <swiper-slide><img src="../assets/slider/3.jpg" /></swiper-slide>
+    <swiper-slide><img src="../assets/slider/4.jpg" /></swiper-slide>
+    <swiper-slide><img src="../assets/slider/5.jpg" /></swiper-slide>
   </swiper>
 </template>
 
