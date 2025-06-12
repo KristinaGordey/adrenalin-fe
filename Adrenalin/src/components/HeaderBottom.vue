@@ -1,5 +1,5 @@
 <template>
-    <div class="sticky bg-gray-900 p-5">
+    <div class="sticky z-2 top-0 bg-gray-900 p-5">
         <nav class="flex items-center justify-between w-full">
             <button class="lg:hidden">
                 <span

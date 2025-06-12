@@ -12,8 +12,8 @@
 
 body {
     min-width: 400px;
-    font-family: "Inter", serif;
+    font-family: "Verdana", sans-serif;
     font-optical-sizing: auto;
-
     background-color: var(--bg-color);
+    overflow-x: hidden;
 }
