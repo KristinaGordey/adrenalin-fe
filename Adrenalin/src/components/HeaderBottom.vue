@@ -10,27 +10,27 @@
             <div class="hidden lg:flex space-x-6">
                 <a
                     href="index.html"
-                    class="text-white hover:text-gray-400 hover:text-green-400 duration-200"
+                    class="text-white hover:text-green-400 duration-200"
                     >Главная</a
                 >
                 <a
                     href="about.html"
-                    class="text-white hover:text-gray-400 hover:text-green-400 duration-200"
+                    class="text-white hover:text-green-400 duration-200"
                     >О нас</a
                 >
                 <a
                     href="workers.html"
-                    class="text-white hover:text-gray-400 hover:text-green-400 duration-200"
+                    class="text-white hover:text-green-400 duration-200"
                     >Персонал</a
                 >
                 <a
                     href="cart.html"
-                    class="text-white hover:text-gray-400 hover:text-green-400 duration-200"
+                    class="text-white hover:text-green-400 duration-200"
                     >Расписание</a
                 >
                 <a
                     href="price.html"
-                    class="text-white hover:text-gray-400 hover:text-green-400 duration-200"
+                    class="text-white hover:text-green-400 duration-200"
                     >Прайс</a
                 >
             </div>
