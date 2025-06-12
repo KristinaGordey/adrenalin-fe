@@ -1,8 +1,8 @@
 <template>
     <footer class="bg-gray-900 text-white py-7" id="footer">
-        <div class="max-w-7xl mx-auto px-5">
-            <div class="flex flex-wrap justify-between">
-                <div class="mb-6 md:mb-0">
+        <div class="px-5 w-full">
+            <div class="flex flex-wrap justify-between mb-6 gap-10">
+                <div class="md:mb-0">
                     <h4 class="text-xl font-semibold mb-4">Информация</h4>
                     <ul class="space-y-2 list-none">
                         <li>
@@ -56,7 +56,7 @@
                     </ul>
                 </div>
 
-                <div class="mb-6 md:mb-0">
+                <div class="md:mb-0">
                     <h4 class="text-xl font-semibold mb-4">Часы работы</h4>
                     <ul class="space-y-2 list-none">
                         <li>Минск, ул. Иосифа Гошкевича 3</li>
@@ -70,7 +70,7 @@
                     </ul>
                 </div>
 
-                <div class="mb-6 md:mb-0">
+                <div class="md:mb-0">
                     <h4 class="text-xl font-semibold mb-4">Контакты</h4>
                     <ul class="space-y-2 list-none">
                         <li>
@@ -90,7 +90,7 @@
                     </ul>
                 </div>
 
-                <div class="mb-6 md:mb-0">
+                <div class="md:mb-0">
                     <h4 class="text-xl font-semibold mb-4">
                         Присоединяйтесь к нам
                     </h4>
