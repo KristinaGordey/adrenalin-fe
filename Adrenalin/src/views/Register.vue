@@ -7,20 +7,32 @@ import { ref } from "vue";
 import { useRouter } from "vue-router";
 const name = ref("");
 const pass = ref("");
+const email = ref("");
+const phone = ref("");
 const error = ref("");
 const passError = ref("");
 const nameError = ref("");
+const emailError = ref("");
+const phoneError = ref("");
 
 const router = useRouter();
 
 const handlesubmit = () => {
   nameError.value = "";
   passError.value = "";
+  emailError.value = "";
+  phone.value = "";
   if (name.value.trim() == "") {
     nameError.value = "Введите имя!";
   }
   if (pass.value.trim() == "") {
     passError.value = "Введите пароль!";
+  }
+  if (email.value.trim() == "") {
+    emailError.value = "Введите адрес электронной почты!";
+  }
+  if (phone.value.trim() == "") {
+    phoneError.value = "Введите номер телефона!";
   }
   router.push({
     name: "Home",
@@ -84,6 +96,7 @@ const handlesubmit = () => {
                   type="password"
                   id="password"
                   name="password"
+                  v-model="pass"
                   placeholder="Пароль"
                   required
                   class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
@@ -96,30 +109,64 @@ const handlesubmit = () => {
                   {{ passError }}
                 </p>
               </div>
+              <!-- Электронная почта -->
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700 required"
+                  >Электронная почта</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  v-model="email"
+                  placeholder="Электронная почта"
+                  required
+                  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                />
+                <p
+                  class="text-red-600 text-sm mt-2"
+                  v-if="emailError"
+                  id="error-message"
+                >
+                  {{ emailError }}
+                </p>
+              </div>
 
-              <!-- Кнопка и чекбокс -->
+              <!-- Номер телефона -->
+              <div>
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-gray-700 required"
+                  >Номер телефона</label
+                >
+                <input
+                  type="phone"
+                  id="phone"
+                  name="phone"
+                  v-model="phone"
+                  placeholder="Номер телефона"
+                  required
+                  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                />
+                <p
+                  class="text-red-600 text-sm mt-2"
+                  v-if="phoneError"
+                  id="error-message"
+                >
+                  {{ phoneError }}
+                </p>
+              </div>
+
+              <!-- Кнопка -->
               <div class="flex items-center justify-between mt-4">
                 <button
                   type="submit"
                   class="border border-gray-300 px-4 py-2 rounded hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
-                  Войти
+                  Регистрация
                 </button>
-                <div class="flex items-center">
-                  <input
-                    type="checkbox"
-                    id="isAdminButton"
-                    name="isAdminButton"
-                    value="admin"
-                    class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-                  />
-                  <label
-                    for="isAdminButton"
-                    class="ml-2 block text-sm text-gray-700"
-                  >
-                    Я администратор
-                  </label>
-                </div>
               </div>
 
               <!-- Сообщение об ошибке -->
