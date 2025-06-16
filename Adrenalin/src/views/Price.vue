@@ -23,22 +23,22 @@ const trainings = ref([
         <main>
             <section class="trainings">
                 <div class="mx-auto p-5">
-                    <h1
-                        class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold mb-5"
-                    >
-                        <span>Прайс</span>
-                    </h1>
-                    <div class="mx-auto px-4">
-                        <div
-                            id="trainingTypesCards"
-                            class="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+                    <div class="mb-5">
+                        <h1
+                            class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold"
                         >
-                            <TrainingTypeCards
-                                v-for="training in trainings"
-                                :key="index"
-                                :training="training"
-                            ></TrainingTypeCards>
-                        </div>
+                            <span>Прайс</span>
+                        </h1>
+                    </div>
+                    <div
+                        id="trainingTypesCards"
+                        class="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4"
+                    >
+                        <TrainingTypeCards
+                            v-for="training in trainings"
+                            :key="index"
+                            :training="training"
+                        ></TrainingTypeCards>
                     </div>
                 </div>
             </section>
