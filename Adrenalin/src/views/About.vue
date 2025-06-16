@@ -2,259 +2,236 @@
 import HeaderTop from "@/components/HeaderTop.vue";
 import HeaderMiddle from "@/components/HeaderMiddle.vue";
 import HeaderBottom from "@/components/HeaderBottom.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
-    <div class="page-container">
-        <div class="header-component">
-            <HeaderTop></HeaderTop>
-            <HeaderMiddle></HeaderMiddle>
-            <HeaderBottom></HeaderBottom>
-        </div>
-        <main>
-            <div
-                class="bg-gradient-to-b from-neutral-300 via-white to-neutral-300"
-            >
-                <section class="">
-                    <div class="relative">
-                        <img
-                            src="../assets/images/About/gym1.jpeg "
-                            class="w-full brightness-50"
-                            alt=""
-                            loading="lazy"
-                        />
-                        <div
-                            class="absolute top-1/2 left-1/2 -translate-1/2 flex lg:gap-10 gap-4 flex-col text-white text-center py-4 md:py-10"
-                        >
-                            <h2
-                                class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold"
-                            >
-                                Добро пожаловать в Adrenalin!
-                            </h2>
-                            <p
-                                class="not-sm:text-[clamp(0.7rem,1vw,1.2rem)] text-gray-300"
-                            >
-                                Ваше идеальное место для здоровья, силы и
-                                гармонии в самом сердце Минска.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section class="" id="about">
-                    <div class="flex flex-col md:flex-row">
-                        <img
-                            src="../assets/images/About/gym2.jpg "
-                            class="md:w-1/2 md:block hidden brightness-90"
-                            alt=""
-                            loading="lazy"
-                        />
-                        <div
-                            class="text-center justify-center text-shadow-lg p-10 flex flex-col gap-y-2"
-                        >
-                            <h2
-                                class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold text-center"
-                            >
-                                О фитнес-центре Adrenalin
-                            </h2>
-
-                            <p>
-                                Мы находимся по адресу: ул. Иосифа Гошкевича 3,
-                                Минск.
-                            </p>
-                            <p>
-                                Наша цель — создать атмосферу, где каждый
-                                чувствует себя комфортно и вдохновленно. Команда
-                                профессионалов Adrenalin поможет вам на пути к
-                                активному и здоровому образу жизни.
-                            </p>
-                        </div>
-                    </div>
-                    <iframe
-                        id="map"
-                        class=""
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28863.337422634013!2d27.547410789297956!3d53.86322311593896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd1a245100d49%3A0x386e1dd96bad1bee!2z0KLRgNC10L3QsNC20LXRgNC90YvQuSDQt9Cw0Lsg0JDQlNCg0JXQndCQ0JvQmNCdIHwg0KLRgNC10L3QuNGA0L7QstC60Lgg0JzQuNC90YHQuiB8INCk0LjRgtC90LXRgSDQutC70YPQsSwg0YHQv9C-0YDRgtC30LDQuw!5e0!3m2!1sru!2sby!4v1729984574006!5m2!1sru!2sby"
-                        width="100%"
-                        height="450"
-                        style="border: 0; display: block"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                </section>
-                <section class="">
-                    <div class="flex flex-col md:flex-row">
-                        <div
-                            class="justify-center items-center text-shadow-lg p-10 flex flex-col gap-y-2 flex-grow"
-                        >
-                            <h2
-                                class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold"
-                            >
-                                Что мы предлагаем
-                            </h2>
-
-                            <p class="">
-                                <i class="fa-solid fa-people-group"></i>
-                                Групповые тренировки — силовые, кардио,
-                                функциональные, йога и т.д.<br />
-                                <i class="fa-solid fa-user-group"></i>
-                                Индивидуальные тренировки — персональный подход
-                                под любые цели. <br /><i
-                                    class="fa-solid fa-stairs"
-                                ></i>
-                                Программы для начинающих и продвинутых —
-                                тренируйтесь на своем уровне. <br />
-                                <i class="fa-solid fa-utensils"></i>
-                                Консультации по питанию — составим план питания
-                                под ваши цели.
-                            </p>
-                        </div>
-                        <div
-                            class="grid md:inline-grid grid-cols-3 md:grid-cols-1 flex-none"
-                        >
-                            <img
-                                src="../assets/images/About/gym3.jpg "
-                                class="brightness-90 w-full h-auto aspect-[4/3] object-cover md:w-auto md:max-h-[33vh]"
-                                loading="lazy"
-                                alt=""
-                            />
-                            <img
-                                src="../assets/images/About/gym4.jpg "
-                                class="brightness-90 w-full h-auto aspect-[4/3] object-cover md:w-auto md:max-h-[33vh]"
-                                loading="lazy"
-                                alt=""
-                            />
-                            <img
-                                src="../assets/images/About/gym5.jpg "
-                                class="brightness-90 w-full h-auto aspect-[4/3] object-cover md:w-auto md:max-h-[33vh]"
-                                loading="lazy"
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                </section>
-                <section class="">
-                    <div class="flex flex-col md:flex-row">
-                        <div
-                            class="text-center justify-center text-shadow-lg p-10 flex flex-col gap-y-2"
-                        >
-                            <h2
-                                class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold text-center"
-                            >
-                                Наши тренеры – ваши проводники к успеху
-                            </h2>
-                            <p>
-                                В Adrenalin работают только сертифицированные
-                                специалисты с реальным опытом. Мы подбираем
-                                тренера под ваши цели и предпочтения.
-                            </p>
-                        </div>
-                        <img
-                            src="../assets/images/About/gym6.jpg "
-                            class="md:w-1/2 md:order-first block brightness-90"
-                            alt=""
-                            loading="lazy"
-                        />
-                    </div>
-                </section>
-                <section class="">
-                    <div class="flex flex-col md:flex-row">
-                        <div
-                            class="text-center justify-center text-shadow-lg p-10 flex flex-col gap-y-2"
-                        >
-                            <h2
-                                class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold text-center"
-                            >
-                                Современный зал и комфортные условия
-                            </h2>
-                            <p>
-                                Просторные тренировочные зоны, современное
-                                оборудование, раздевалки, душевые, зона отдыха.
-                                У нас вы найдете всё, что нужно для продуктивных
-                                и приятных тренировок.
-                            </p>
-                        </div>
-                        <div class="grid grid-cols-2 md:max-w-1/2">
-                            <img
-                                src="../assets/images/About/gym7.jpg "
-                                class="block brightness-90"
-                                alt=""
-                                loading="lazy"
-                            />
-                            <img
-                                src="../assets/images/About/gym9.jpg "
-                                class="block brightness-90"
-                                alt=""
-                                loading="lazy"
-                            /><img
-                                src="../assets/images/About/gym8.jpg "
-                                class="col-span-full block brightness-90"
-                                alt=""
-                                loading="lazy"
-                            />
-                        </div>
-                    </div>
-                </section>
-                <section class="">
-                    <div
-                        class="text-center items-center justify-center text-shadow-lg p-10 flex flex-col gap-y-2"
-                    >
-                        <h2
-                            class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold text-center"
-                        >
-                            Присоединяйтесь к Adrenalin и начните путь к лучшей
-                            версии себя!
-                        </h2>
-                        <p>Вместе мы сможем достичь невероятных высот 💪</p>
-                        <p class="text-left">
-                            <br />
-                            <i class="fa-solid fa-location-dot"></i> Адрес:
-                            Минск, ул. Иосифа Гошкевича 3 <br />
-                            <i class="fa-solid fa-phone"></i> Телефон:
-                            <a
-                                class="hover:underline hover:text-green-400 duration-200"
-                                href="tel:+375298525312"
-                                >+375-29-8525312</a
-                            >,
-                            <a
-                                class="hover:underline hover:text-green-400 duration-200"
-                                href="tel:+375292233854"
-                                >+375-29-2233854</a
-                            ><br />
-                            <i class="fa-solid fa-envelope"></i> Email:
-                            <a
-                                class="hover:underline hover:text-green-400 duration-200"
-                                href="mailto:kristinababichvic@gmail.com"
-                                >kristinababichvic@gmail.com</a
-                            >
-                        </p>
-                        <ul class="flex space-x-4">
-                            <li>
-                                <a
-                                    href="#"
-                                    class="text-2xl hover:text-green-400 duration-200"
-                                    ><i class="fa-brands fa-youtube"></i
-                                ></a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    class="text-2xl hover:text-green-400 duration-200"
-                                    ><i class="fa-brands fa-facebook-f"></i
-                                ></a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    class="text-2xl hover:text-green-400 duration-200"
-                                    ><i class="fa-brands fa-instagram"></i
-                                ></a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-        </main>
-        <div class="footer-component"><Footer></Footer></div>
+  <div class="page-container">
+    <div class="header-component">
+      <HeaderTop></HeaderTop>
+      <HeaderMiddle></HeaderMiddle>
+      <HeaderBottom></HeaderBottom>
     </div>
+    <main>
+      <div class="bg-gradient-to-b from-neutral-300 via-white to-neutral-300">
+        <section class="">
+          <div class="relative">
+            <img
+              src="../assets/images/About/gym1.jpeg "
+              class="w-full brightness-50"
+              alt=""
+              loading="lazy"
+            />
+            <div
+              class="absolute top-1/2 left-1/2 -translate-1/2 flex lg:gap-10 gap-4 flex-col text-white text-center py-4 md:py-10"
+            >
+              <h2 class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold">
+                Добро пожаловать в Adrenalin!
+              </h2>
+              <p class="not-sm:text-[clamp(0.7rem,1vw,1.2rem)] text-gray-300">
+                Ваше идеальное место для здоровья, силы и гармонии в самом
+                сердце Минска.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="" id="about">
+          <div class="flex flex-col md:flex-row">
+            <img
+              src="../assets/images/About/gym2.jpg "
+              class="md:w-1/2 md:block hidden brightness-90"
+              alt=""
+              loading="lazy"
+            />
+            <div
+              class="text-center justify-center text-shadow-lg p-10 flex flex-col gap-y-2"
+            >
+              <h2
+                class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold text-center"
+              >
+                О фитнес-центре Adrenalin
+              </h2>
+
+              <p>Мы находимся по адресу: ул. Иосифа Гошкевича 3, Минск.</p>
+              <p>
+                Наша цель — создать атмосферу, где каждый чувствует себя
+                комфортно и вдохновленно. Команда профессионалов Adrenalin
+                поможет вам на пути к активному и здоровому образу жизни.
+              </p>
+            </div>
+          </div>
+          <iframe
+            id="map"
+            class=""
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28863.337422634013!2d27.547410789297956!3d53.86322311593896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd1a245100d49%3A0x386e1dd96bad1bee!2z0KLRgNC10L3QsNC20LXRgNC90YvQuSDQt9Cw0Lsg0JDQlNCg0JXQndCQ0JvQmNCdIHwg0KLRgNC10L3QuNGA0L7QstC60Lgg0JzQuNC90YHQuiB8INCk0LjRgtC90LXRgSDQutC70YPQsSwg0YHQv9C-0YDRgtC30LDQuw!5e0!3m2!1sru!2sby!4v1729984574006!5m2!1sru!2sby"
+            width="100%"
+            height="450"
+            style="border: 0; display: block"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+        <section class="">
+          <div class="flex flex-col md:flex-row">
+            <div
+              class="justify-center items-center text-shadow-lg p-10 flex flex-col gap-y-2 flex-grow"
+            >
+              <h2 class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold">
+                Что мы предлагаем
+              </h2>
+
+              <p class="">
+                <i class="fa-solid fa-people-group"></i>
+                Групповые тренировки — силовые, кардио, функциональные, йога и
+                т.д.<br />
+                <i class="fa-solid fa-user-group"></i>
+                Индивидуальные тренировки — персональный подход под любые цели.
+                <br /><i class="fa-solid fa-stairs"></i> Программы для
+                начинающих и продвинутых — тренируйтесь на своем уровне. <br />
+                <i class="fa-solid fa-utensils"></i>
+                Консультации по питанию — составим план питания под ваши цели.
+              </p>
+            </div>
+            <div
+              class="grid md:inline-grid grid-cols-3 md:grid-cols-1 flex-none"
+            >
+              <img
+                src="../assets/images/About/gym3.jpg "
+                class="brightness-90 w-full h-auto aspect-[4/3] object-cover md:w-auto md:max-h-[33vh]"
+                loading="lazy"
+                alt=""
+              />
+              <img
+                src="../assets/images/About/gym4.jpg "
+                class="brightness-90 w-full h-auto aspect-[4/3] object-cover md:w-auto md:max-h-[33vh]"
+                loading="lazy"
+                alt=""
+              />
+              <img
+                src="../assets/images/About/gym5.jpg "
+                class="brightness-90 w-full h-auto aspect-[4/3] object-cover md:w-auto md:max-h-[33vh]"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        <section class="">
+          <div class="flex flex-col md:flex-row">
+            <div
+              class="text-center justify-center text-shadow-lg p-10 flex flex-col gap-y-2"
+            >
+              <h2
+                class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold text-center"
+              >
+                Наши тренеры – ваши проводники к успеху
+              </h2>
+              <p>
+                В Adrenalin работают только сертифицированные специалисты с
+                реальным опытом. Мы подбираем тренера под ваши цели и
+                предпочтения.
+              </p>
+            </div>
+            <img
+              src="../assets/images/About/gym6.jpg "
+              class="md:w-1/2 md:order-first block brightness-90"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+        </section>
+        <section class="">
+          <div class="flex flex-col md:flex-row">
+            <div
+              class="text-center justify-center text-shadow-lg p-10 flex flex-col gap-y-2"
+            >
+              <h2
+                class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold text-center"
+              >
+                Современный зал и комфортные условия
+              </h2>
+              <p>
+                Просторные тренировочные зоны, современное оборудование,
+                раздевалки, душевые, зона отдыха. У нас вы найдете всё, что
+                нужно для продуктивных и приятных тренировок.
+              </p>
+            </div>
+            <div class="grid grid-cols-2 md:max-w-1/2">
+              <img
+                src="../assets/images/About/gym7.jpg "
+                class="block brightness-90"
+                alt=""
+                loading="lazy"
+              />
+              <img
+                src="../assets/images/About/gym9.jpg "
+                class="block brightness-90"
+                alt=""
+                loading="lazy"
+              /><img
+                src="../assets/images/About/gym8.jpg "
+                class="col-span-full block brightness-90"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="">
+          <div
+            class="text-center items-center justify-center text-shadow-lg p-10 flex flex-col gap-y-2"
+          >
+            <h2
+              class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold text-center"
+            >
+              Присоединяйтесь к Adrenalin и начните путь к лучшей версии себя!
+            </h2>
+            <p>Вместе мы сможем достичь невероятных высот 💪</p>
+            <p class="text-left">
+              <br />
+              <i class="fa-solid fa-location-dot"></i> Адрес: Минск, ул. Иосифа
+              Гошкевича 3 <br />
+              <i class="fa-solid fa-phone"></i> Телефон:
+              <a
+                class="hover:underline hover:text-green-400 duration-200"
+                href="tel:+375298525312"
+                >+375-29-8525312</a
+              >,
+              <a
+                class="hover:underline hover:text-green-400 duration-200"
+                href="tel:+375292233854"
+                >+375-29-2233854</a
+              ><br />
+              <i class="fa-solid fa-envelope"></i> Email:
+              <a
+                class="hover:underline hover:text-green-400 duration-200"
+                href="mailto:kristinababichvic@gmail.com"
+                >kristinababichvic@gmail.com</a
+              >
+            </p>
+            <ul class="flex space-x-4">
+              <li>
+                <a href="#" class="text-2xl hover:text-green-400 duration-200"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="text-2xl hover:text-green-400 duration-200"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="text-2xl hover:text-green-400 duration-200"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div class="footer-component"><Footer></Footer></div>
+  </div>
 </template>
 <style scoped></style>
