@@ -61,7 +61,6 @@ const handlesubmit = () => {
                     novalidate
                 >
                     <div class="flex flex-col gap-y-5">
-                        <!-- Имя -->
                         <div class="flex flex-col gap-y-1">
                             <label
                                 for="username"
@@ -87,7 +86,6 @@ const handlesubmit = () => {
                             </p>
                         </div>
 
-                        <!-- Пароль -->
                         <div class="flex flex-col gap-y-1">
                             <label
                                 for="password"
@@ -112,7 +110,7 @@ const handlesubmit = () => {
                                 {{ passError }}
                             </p>
                         </div>
-                        <!-- Электронная почта -->
+
                         <div class="flex flex-col gap-y-1">
                             <label
                                 for="email"
@@ -137,7 +135,6 @@ const handlesubmit = () => {
                             </p>
                         </div>
 
-                        <!-- Номер телефона -->
                         <div class="flex flex-col gap-y-1">
                             <label
                                 for="phone"
@@ -162,7 +159,6 @@ const handlesubmit = () => {
                             </p>
                         </div>
 
-                        <!-- Кнопка -->
                         <div class="">
                             <button
                                 type="submit"
@@ -172,7 +168,6 @@ const handlesubmit = () => {
                             </button>
                         </div>
 
-                        <!-- Сообщение об ошибке -->
                         <p class="text-red-600" v-if="error" id="error-message">
                             {{ error }}
                         </p>

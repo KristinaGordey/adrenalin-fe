@@ -37,14 +37,36 @@
                     Часы работы
                 </h2>
                 <ul class="space-y-2 list-none">
-                    <li>Минск, ул. Иосифа Гошкевича 3</li>
-                    <li>Воскресенье 09:00-21:00</li>
-                    <li>Понедельник 07:00-23:00</li>
-                    <li>Вторник 07:00-23:00</li>
-                    <li>Среда 07:00-23:00</li>
-                    <li>Четверг 07:00-23:00</li>
-                    <li>Пятница 07:00-23:00</li>
-                    <li>Суббота 09:00-21:00</li>
+                    <ul>
+                        <li>
+                            Понедельник
+                            <time datetime="07:00/23:00">07:00–23:00</time>
+                        </li>
+                        <li>
+                            Вторник
+                            <time datetime="07:00/23:00">07:00–23:00</time>
+                        </li>
+                        <li>
+                            Среда
+                            <time datetime="07:00/23:00">07:00–23:00</time>
+                        </li>
+                        <li>
+                            Четверг
+                            <time datetime="07:00/23:00">07:00–23:00</time>
+                        </li>
+                        <li>
+                            Пятница
+                            <time datetime="07:00/23:00">07:00–23:00</time>
+                        </li>
+                        <li>
+                            Суббота
+                            <time datetime="09:00/21:00">09:00–21:00</time>
+                        </li>
+                        <li>
+                            Воскресенье
+                            <time datetime="09:00/21:00">09:00–21:00</time>
+                        </li>
+                    </ul>
                 </ul>
             </div>
 
@@ -52,29 +74,31 @@
                 <h2 class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-semibold">
                     Контакты
                 </h2>
-                <ul class="space-y-2 list-none">
-                    <li>
-                        <a
-                            class="hover:underline hover:text-green-400 duration-200"
-                            href="tel:+375298525312"
-                            >+375-29-8525312</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            class="hover:underline hover:text-green-400 duration-200"
-                            href="tel:+375292233854"
-                            >+375-29-2233854</a
-                        >
-                    </li>
-                </ul>
+                <address>
+                    <ul class="space-y-2 list-none">
+                        <li>
+                            <a
+                                class="hover:underline hover:text-green-400 duration-200"
+                                href="tel:+375298525312"
+                                >+375-29-8525312</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="hover:underline hover:text-green-400 duration-200"
+                                href="tel:+375292233854"
+                                >+375-29-2233854</a
+                            >
+                        </li>
+                    </ul>
+                </address>
             </div>
 
             <div class="flex flex-col gap-y-5">
                 <h2 class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-semibold">
                     Присоединяйтесь к нам
                 </h2>
-                <ul class="flex space-x-4">
+                <ul class="flex justify-center space-x-4">
                     <li>
                         <a
                             href="#"
