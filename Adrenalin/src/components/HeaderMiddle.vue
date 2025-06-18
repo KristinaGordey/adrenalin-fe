@@ -1,8 +1,6 @@
 <template>
-    <div class="flex items-center justify-between bg-white p-5">
-        <div
-            class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold hover:text-green-400 duration-200"
-        >
+    <div class="flex justify-between items-center bg-white p-5">
+        <div class="font-bold text-title hover:text-green-400 duration-200">
             <router-link to="/">ADRENALIN</router-link>
         </div>
 
@@ -15,6 +13,9 @@
                 data-bs-target="#offcanvasCart"
                 aria-controls="offcanvasCart"
             >
+                <span class="visually-hidden"
+                    >Открыть панель с записями пользователя</span
+                >
                 <i class="fa-solid fa-cart-shopping"></i>
             </button>
         </div>

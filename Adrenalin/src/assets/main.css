@@ -210,3 +210,32 @@ body {
 .horizontal-scroll::-webkit-scrollbar {
     width: 0px;
 }
+
+.text-title {
+    font-size: clamp(1.5rem, 2.083vw, 2.5rem);
+}
+
+.text-caption {
+    font-size: clamp(0.7rem, 1vw, 1.2rem);
+}
+
+#trainersCards .trainer-card {
+    min-width: 250px;
+}
+
+address {
+    font-style: normal;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

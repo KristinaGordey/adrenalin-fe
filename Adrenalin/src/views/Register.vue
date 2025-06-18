@@ -48,15 +48,15 @@ const handlesubmit = () => {
         </div>
         <main>
             <div
-                class="flex flex-col gap-y-5 mx-auto w-full max-w-lg bg-white p-6 rounded shadow"
+                class="flex flex-col gap-y-5 bg-white shadow mx-auto p-6 rounded w-full max-w-lg"
             >
-                <h1 class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-semibold">
+                <h1 class="font-semibold text-title">
                     <span>Регистрация</span>
                 </h1>
                 <form
                     @submit.prevent="handlesubmit"
                     method="post"
-                    class="needs-validation space-y-4"
+                    class="space-y-4 needs-validation"
                     id="login-form"
                     novalidate
                 >
@@ -74,7 +74,7 @@ const handlesubmit = () => {
                                 v-model="name"
                                 placeholder="Имя"
                                 required
-                                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-400 focus:border-green-400"
+                                class="shadow-sm px-3 py-2 border border-gray-300 focus:border-green-400 rounded-md focus:outline-none focus:ring-green-400 w-full"
                             />
 
                             <p
@@ -99,7 +99,7 @@ const handlesubmit = () => {
                                 v-model="pass"
                                 placeholder="Пароль"
                                 required
-                                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-400 focus:border-green-400"
+                                class="shadow-sm px-3 py-2 border border-gray-300 focus:border-green-400 rounded-md focus:outline-none focus:ring-green-400 w-full"
                             />
 
                             <p
@@ -124,7 +124,7 @@ const handlesubmit = () => {
                                 v-model="email"
                                 placeholder="Электронная почта"
                                 required
-                                class="px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-400 focus:border-green-400"
+                                class="shadow-sm px-3 py-2 border border-gray-300 focus:border-green-400 rounded-md focus:outline-none focus:ring-green-400"
                             />
                             <p
                                 class="text-red-600"
@@ -148,7 +148,7 @@ const handlesubmit = () => {
                                 v-model="phone"
                                 placeholder="Номер телефона"
                                 required
-                                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-400 focus:border-green-400"
+                                class="shadow-sm px-3 py-2 border border-gray-300 focus:border-green-400 rounded-md focus:outline-none focus:ring-green-400 w-full"
                             />
                             <p
                                 class="text-red-600"
@@ -159,14 +159,12 @@ const handlesubmit = () => {
                             </p>
                         </div>
 
-                        <div class="">
-                            <button
-                                type="submit"
-                                class="border border-gray-300 px-4 py-2 rounded hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-400"
-                            >
-                                Регистрация
-                            </button>
-                        </div>
+                        <button
+                            type="submit"
+                            class="hover:bg-gray-100 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2"
+                        >
+                            Регистрация
+                        </button>
 
                         <p class="text-red-600" v-if="error" id="error-message">
                             {{ error }}

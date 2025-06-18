@@ -38,7 +38,7 @@ const handlesubmit = () => {
             <div
                 class="flex flex-col gap-y-5 w-full max-w-md mx-auto bg-white p-6 rounded shadow"
             >
-                <h1 class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-semibold">
+                <h1 class="text-title font-semibold">
                     <span>Вход</span>
                 </h1>
                 <form

@@ -24,36 +24,34 @@ const workers = ref([
         </div>
         <main>
             <section>
-                <div class="text-center md:p-15 lg:p-20 p-10">
-                    <h2
-                        class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold border-b-2 border-black lg:p-15 md:p-10 p-5"
+                <div class="p-10 md:p-15 lg:p-20 text-center">
+                    <h1
+                        class="p-5 md:p-10 lg:p-15 border-b-2 border-black font-bold text-title"
                     >
                         <span>
                             Adrenalin — фитнес-центр в центре Минска для тех,
                             кто хочет больше — здоровья, силы и энергии.
                         </span>
-                    </h2>
+                    </h1>
                 </div>
                 <div class="grid md:grid-cols-2 grid-col-1">
                     <img
                         src="../assets/images/Home/3.jpg "
-                        class="block aspect-[4/3] object-cover brightness-90"
+                        class="block brightness-90 object-cover aspect-[4/3]"
                         alt=""
                         loading="lazy"
                     />
                     <img
                         src="../assets/images/Home/1.jpg "
-                        class="block aspect-[4/3] object-cover brightness-90"
+                        class="block brightness-90 object-cover aspect-[4/3]"
                         alt=""
                         loading="lazy"
                     />
                 </div>
             </section>
             <section>
-                <div class="flex flex-col text-center gap-y-5 p-10">
-                    <h2
-                        class="text-[clamp(1.5rem,2.083vw,2.5rem)] text-center font-bold"
-                    >
+                <div class="flex flex-col gap-y-5 p-10 text-center">
+                    <h2 class="font-bold text-title text-center">
                         <span> Почему выбирают Adrenalin? </span>
                     </h2>
                     <p>
@@ -67,13 +65,13 @@ const workers = ref([
                 <div class="grid md:grid-cols-2 grid-col-1">
                     <img
                         src="../assets/images/About/gym6.jpg "
-                        class="block aspect-[4/3] object-cover brightness-90"
+                        class="block brightness-90 object-cover aspect-[4/3]"
                         alt=""
                         loading="lazy"
                     />
                     <img
                         src="../assets/images/Home/2.jpg "
-                        class="block aspect-[4/3] object-cover brightness-90"
+                        class="block brightness-90 object-cover aspect-[4/3]"
                         alt=""
                         loading="lazy"
                     />
@@ -81,7 +79,7 @@ const workers = ref([
             </section>
             <section>
                 <div class="flex flex-col gap-y-5 p-10 text-center">
-                    <h2 class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold">
+                    <h2 class="font-bold text-title">
                         <span
                             >Наши тренеры - команда, которой можно
                             доверять</span
@@ -95,20 +93,23 @@ const workers = ref([
                 </div>
                 <div
                     id="trainersCards"
-                    class="horizontal-scroll flex snap-x snap-mandatory overflow-x-scroll gap-x-5 px-10"
+                    class="flex gap-x-5 px-10 overflow-x-scroll snap-mandatory snap-x horizontal-scroll"
                 >
                     <div
-                        v-for="worker in workers"
-                        :key="worker.id"
-                        class="min-w-[250px]"
+                        id="trainersCards"
+                        class="flex gap-x-5 px-10 overflow-x-scroll snap-mandatory snap-x horizontal-scroll"
                     >
-                        <Workers :worker="worker" />
+                        <Workers
+                            v-for="worker in workers"
+                            :key="index"
+                            :worker="worker"
+                        ></Workers>
                     </div>
                 </div>
             </section>
             <section>
                 <div class="flex flex-col gap-y-5 p-10 text-center">
-                    <h2 class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold">
+                    <h2 class="font-bold text-title">
                         <span
                             >Проверенные методики — гарантированный
                             результат</span
@@ -121,20 +122,23 @@ const workers = ref([
                 </div>
                 <div
                     id="trainersCards"
-                    class="horizontal-scroll flex snap-x snap-mandatory overflow-x-scroll gap-x-5 px-10"
+                    class="flex gap-x-5 px-10 overflow-x-scroll snap-mandatory snap-x horizontal-scroll"
                 >
                     <div
-                        v-for="worker in workers"
-                        :key="worker.id"
-                        class="min-w-[250px]"
+                        id="trainersCards"
+                        class="flex gap-x-5 px-10 overflow-x-scroll snap-mandatory snap-x horizontal-scroll"
                     >
-                        <Workers :worker="worker" />
+                        <Workers
+                            v-for="worker in workers"
+                            :key="index"
+                            :worker="worker"
+                        ></Workers>
                     </div>
                 </div>
             </section>
             <section>
                 <div class="flex flex-col gap-y-5 p-10 text-center">
-                    <h2 class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold">
+                    <h2 class="font-bold text-title">
                         <span
                             >Современное пространство для тренировок и
                             отдыха</span
@@ -149,26 +153,26 @@ const workers = ref([
                 <div class="lg:grid grid-cols-2 grid-rows-[auto_auto_auto]">
                     <img
                         src="../assets/images/Home/4.jpg"
-                        class="w-full aspect-[3/4] object-cover brightness-90"
+                        class="brightness-90 w-full object-cover aspect-[3/4]"
                         alt=""
                         loading="lazy"
                     />
                     <img
                         src="../assets/images/Home/5.jpg"
-                        class="w-full aspect-[3/4] object-cover brightness-90"
+                        class="brightness-90 w-full object-cover aspect-[3/4]"
                         alt=""
                         loading="lazy"
                     />
 
                     <img
                         src="../assets/images/Home/6.jpg"
-                        class="w-full col-span-2 aspect-[4/3] object-cover brightness-90"
+                        class="col-span-2 brightness-90 w-full object-cover aspect-[4/3]"
                         alt=""
                         loading="lazy"
                     />
                     <img
                         src="../assets/images/Home/9.jpg"
-                        class="w-full col-span-2 aspect-[4/3] object-cover brightness-90"
+                        class="col-span-2 brightness-90 w-full object-cover aspect-[4/3]"
                         alt=""
                         loading="lazy"
                     />
@@ -176,14 +180,12 @@ const workers = ref([
             </section>
             <section>
                 <div
-                    class="flex flex-col gap-y-5 p-10 text-center justify-center items-center"
+                    class="flex flex-col justify-center items-center gap-y-5 p-10 text-center"
                 >
                     <div
-                        class="border-b-2 border-black p-5 flex flex-col gap-y-5"
+                        class="flex flex-col gap-y-5 p-5 border-b-2 border-black"
                     >
-                        <h2
-                            class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold"
-                        >
+                        <h2 class="font-bold text-title">
                             <span>Решения приводят к результатам</span>
                         </h2>
                         <p>
@@ -193,48 +195,54 @@ const workers = ref([
                         </p>
                     </div>
                     <address>
-                        <i class="fa-solid fa-location-dot"></i> Адрес: Минск,
-                        ул. Иосифа Гошкевича 3 <br />
-                        <i class="fa-solid fa-phone"></i> Телефон:
-                        <a
-                            class="hover:underline hover:text-green-400 duration-200"
-                            href="tel:+375298525312"
-                            >+375-29-8525312</a
-                        >,
-                        <a
-                            class="hover:underline hover:text-green-400 duration-200"
-                            href="tel:+375292233854"
-                            >+375-29-2233854</a
-                        ><br />
-                        <i class="fa-solid fa-envelope"></i> Email:
-                        <a
-                            class="hover:underline hover:text-green-400 duration-200"
-                            href="mailto:kristinababichvic@gmail.com"
-                            >kristinababichvic@gmail.com</a
-                        >
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i> Адрес:
+                            Минск, ул. Иосифа Гошкевича 3
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-phone"></i> Телефон:
+                            <a
+                                class="hover:text-green-400 hover:underline duration-200"
+                                href="tel:+375298525312"
+                                >+375-29-8525312</a
+                            >,
+                            <a
+                                class="hover:text-green-400 hover:underline duration-200"
+                                href="tel:+375292233854"
+                                >+375-29-2233854</a
+                            >
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-envelope"></i> Email:
+                            <a
+                                class="hover:text-green-400 hover:underline duration-200"
+                                href="mailto:kristinababichvic@gmail.com"
+                                >kristinababichvic@gmail.com</a
+                            >
+                        </p>
                     </address>
-                    <ul class="flex space-x-4">
+                    <ul class="flex justify-center space-x-4 text-title">
                         <li>
                             <a
                                 href="#"
-                                target="_blank"
-                                class="text-2xl hover:text-green-400 duration-200"
+                                class="hover:text-green-400 duration-200"
+                                ><span class="visually-hidden">YouTube</span
                                 ><i class="fa-brands fa-youtube"></i
                             ></a>
                         </li>
                         <li>
                             <a
                                 href="#"
-                                target="_blank"
-                                class="text-2xl hover:text-green-400 duration-200"
+                                class="hover:text-green-400 duration-200"
+                                ><span class="visually-hidden">Facebook</span
                                 ><i class="fa-brands fa-facebook-f"></i
                             ></a>
                         </li>
                         <li>
                             <a
                                 href="#"
-                                target="_blank"
-                                class="text-2xl hover:text-green-400 duration-200"
+                                class="hover:text-green-400 duration-200"
+                                ><span class="visually-hidden">Instagram</span
                                 ><i class="fa-brands fa-instagram"></i
                             ></a>
                         </li>

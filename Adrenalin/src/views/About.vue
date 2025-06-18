@@ -13,24 +13,20 @@ import Footer from "@/components/Footer.vue";
             <HeaderBottom></HeaderBottom>
         </div>
         <main>
-            <section class="">
+            <section>
                 <div
-                    class="relative min-h-[70vh] bg-gray-800 bg-[url('../assets/images/About/1.jpg')] bg-cover bg-center bg-no-repeat"
+                    class="relative bg-[url('../assets/images/About/1.jpg')] bg-gray-800 bg-cover bg-no-repeat bg-center min-h-[70vh]"
                 >
                     <div
-                        class="flex items-center justify-center absolute inset-0 bg-black/70 p-10"
+                        class="absolute inset-0 flex justify-center items-center bg-black/70 p-10"
                     >
                         <div
-                            class="relative flex lg:gap-10 gap-4 flex-col text-white text-center border-b-2 border-white lg:p-15 md:p-10 p-5"
+                            class="relative flex flex-col gap-4 lg:gap-10 p-5 md:p-10 lg:p-15 border-white border-b-2 text-white text-center"
                         >
-                            <h2
-                                class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold"
-                            >
+                            <h1 class="font-bold text-title">
                                 Добро пожаловать в Adrenalin!
-                            </h2>
-                            <p
-                                class="not-sm:text-[clamp(0.7rem,1vw,1.2rem)] text-gray-300"
-                            >
+                            </h1>
+                            <p class="text-gray-300">
                                 Ваше идеальное место для здоровья, силы и
                                 гармонии в самом сердце Минска.
                             </p>
@@ -38,20 +34,18 @@ import Footer from "@/components/Footer.vue";
                     </div>
                 </div>
             </section>
-            <section class="" id="about">
-                <div class="flex flex-col md:flex-row">
+            <section>
+                <div class="flex md:flex-row flex-col">
                     <img
                         src="../assets/images/About/gym2.jpg "
-                        class="md:w-1/2 md:block hidden brightness-90"
+                        class="hidden md:block brightness-90 md:w-1/2"
                         alt=""
                         loading="lazy"
                     />
                     <div
-                        class="text-center justify-center text-shadow-lg p-10 flex flex-col gap-y-2"
+                        class="flex flex-col justify-center gap-y-2 text-shadow-lg p-10 text-center"
                     >
-                        <h2
-                            class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold"
-                        >
+                        <h2 class="font-bold text-title">
                             О фитнес-центре Adrenalin
                         </h2>
 
@@ -80,64 +74,66 @@ import Footer from "@/components/Footer.vue";
                     referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
             </section>
-            <section class="">
-                <div class="flex flex-col md:flex-row">
+            <section>
+                <div class="flex md:flex-row flex-col">
                     <div
-                        class="justify-center items-center text-shadow-lg p-10 flex flex-col gap-y-2 flex-grow"
+                        class="flex flex-col flex-grow justify-center items-center gap-y-2 text-shadow-lg p-10"
                     >
-                        <h2
-                            class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold"
-                        >
-                            Что мы предлагаем
-                        </h2>
+                        <h2 class="font-bold text-title">Что мы предлагаем</h2>
 
-                        <p>
-                            <i class="fa-solid fa-people-group"></i>
-                            Групповые тренировки — силовые, кардио,
-                            функциональные, йога и т.д.<br />
-                            <i class="fa-solid fa-user-group"></i>
-                            Индивидуальные тренировки — персональный подход под
-                            любые цели.
-                            <br /><i class="fa-solid fa-stairs"></i> Программы
-                            для начинающих и продвинутых — тренируйтесь на своем
-                            уровне. <br />
-                            <i class="fa-solid fa-utensils"></i>
-                            Консультации по питанию — составим план питания под
-                            ваши цели.
-                        </p>
+                        <ul>
+                            <li>
+                                <i class="fa-people-group fa-solid"></i>
+                                Групповые тренировки — силовые, кардио,
+                                функциональные, йога и т.д.
+                            </li>
+                            <li>
+                                <i class="fa-user-group fa-solid"></i>
+                                Индивидуальные тренировки — персональный подход
+                                под любые цели.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-stairs"></i> Программы для
+                                начинающих и продвинутых — тренируйтесь на своем
+                                уровне.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-utensils"></i>
+                                Консультации по питанию — составим план питания
+                                под ваши цели.
+                            </li>
+                        </ul>
                     </div>
                     <div
-                        class="grid md:inline-grid grid-cols-3 md:grid-cols-1 flex-none"
+                        class="md:inline-grid flex-none grid grid-cols-3 md:grid-cols-1"
                     >
                         <img
                             src="../assets/images/About/gym3.jpg "
-                            class="brightness-90 w-full h-auto aspect-[4/3] object-cover md:w-auto md:max-h-[33vh]"
+                            class="brightness-90 w-full md:w-auto h-auto md:max-h-[33vh] object-cover aspect-[4/3]"
                             loading="lazy"
                             alt=""
                         />
                         <img
                             src="../assets/images/About/gym4.jpg "
-                            class="brightness-90 w-full h-auto aspect-[4/3] object-cover md:w-auto md:max-h-[33vh]"
+                            class="brightness-90 w-full md:w-auto h-auto md:max-h-[33vh] object-cover aspect-[4/3]"
                             loading="lazy"
                             alt=""
                         />
                         <img
                             src="../assets/images/About/gym5.jpg "
-                            class="brightness-90 w-full h-auto aspect-[4/3] object-cover md:w-auto md:max-h-[33vh]"
+                            class="brightness-90 w-full md:w-auto h-auto md:max-h-[33vh] object-cover aspect-[4/3]"
                             loading="lazy"
                             alt=""
                         />
                     </div>
                 </div>
             </section>
-            <section class="">
-                <div class="flex flex-col md:flex-row">
+            <section>
+                <div class="flex md:flex-row flex-col">
                     <div
-                        class="text-center justify-center text-shadow-lg p-10 flex flex-col gap-y-2"
+                        class="flex flex-col justify-center gap-y-2 text-shadow-lg p-10 text-center"
                     >
-                        <h2
-                            class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold"
-                        >
+                        <h2 class="font-bold text-title">
                             Наши тренеры – ваши проводники к успеху
                         </h2>
                         <p>
@@ -148,27 +144,25 @@ import Footer from "@/components/Footer.vue";
                     </div>
                     <img
                         src="../assets/images/About/gym6.jpg "
-                        class="md:w-1/2 md:order-first block brightness-90"
+                        class="block md:order-first brightness-90 md:w-1/2"
                         alt=""
                         loading="lazy"
                     />
                 </div>
             </section>
-            <section class="">
-                <div class="flex flex-col md:flex-row">
+            <section>
+                <div class="flex md:flex-row flex-col">
                     <div
-                        class="text-center justify-center text-shadow-lg p-10 flex flex-col gap-y-2"
+                        class="flex flex-col justify-center gap-y-2 text-shadow-lg p-10 text-center"
                     >
-                        <h2
-                            class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold"
-                        >
+                        <h2 class="font-bold text-title">
                             Современный зал и комфортные условия
                         </h2>
                         <p>
                             Просторные тренировочные зоны, современное
-                            оборудование, раздевалки, душевые, зона отдыха. У
-                            нас вы найдете всё, что нужно для продуктивных и
-                            приятных тренировок.
+                            оборудование, раздевалки, душевые, зона отдыха,
+                            фитнес-кафе. У нас вы найдете всё, что нужно для
+                            продуктивных и приятных тренировок.
                         </p>
                     </div>
                     <div class="grid grid-cols-2 md:max-w-1/2">
@@ -185,71 +179,75 @@ import Footer from "@/components/Footer.vue";
                             loading="lazy"
                         /><img
                             src="../assets/images/About/gym8.jpg "
-                            class="col-span-full block brightness-90"
+                            class="block col-span-full brightness-90"
                             alt=""
                             loading="lazy"
                         />
                     </div>
                 </div>
             </section>
-            <section class="">
+            <section>
                 <div
-                    class="text-center items-center justify-center text-shadow-lg p-10 flex flex-col gap-y-5"
+                    class="flex flex-col justify-center items-center gap-y-5 text-shadow-lg p-10 text-center"
                 >
                     <div
-                        class="border-b-2 border-black p-5 flex flex-col gap-y-5"
+                        class="flex flex-col gap-y-5 p-5 border-b-2 border-black"
                     >
-                        <h2
-                            class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold text-center"
-                        >
+                        <h2 class="font-bold text-title text-center">
                             Присоединяйтесь к Adrenalin и начните путь к лучшей
                             версии себя!
                         </h2>
                         <p>Вместе мы сможем достичь невероятных высот 💪</p>
                     </div>
                     <address>
-                        <i class="fa-solid fa-location-dot"></i> Адрес: Минск,
-                        ул. Иосифа Гошкевича 3 <br />
-                        <i class="fa-solid fa-phone"></i> Телефон:
-                        <a
-                            class="hover:underline hover:text-green-400 duration-200"
-                            href="tel:+375298525312"
-                            >+375-29-8525312</a
-                        >,
-                        <a
-                            class="hover:underline hover:text-green-400 duration-200"
-                            href="tel:+375292233854"
-                            >+375-29-2233854</a
-                        ><br />
-                        <i class="fa-solid fa-envelope"></i> Email:
-                        <a
-                            class="hover:underline hover:text-green-400 duration-200"
-                            href="mailto:kristinababichvic@gmail.com"
-                            >kristinababichvic@gmail.com</a
-                        >
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i> Адрес:
+                            Минск, ул. Иосифа Гошкевича 3
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-phone"></i> Телефон:
+                            <a
+                                class="hover:text-green-400 hover:underline duration-200"
+                                href="tel:+375298525312"
+                                >+375-29-8525312</a
+                            >,
+                            <a
+                                class="hover:text-green-400 hover:underline duration-200"
+                                href="tel:+375292233854"
+                                >+375-29-2233854</a
+                            >
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-envelope"></i> Email:
+                            <a
+                                class="hover:text-green-400 hover:underline duration-200"
+                                href="mailto:kristinababichvic@gmail.com"
+                                >kristinababichvic@gmail.com</a
+                            >
+                        </p>
                     </address>
-                    <ul class="flex space-x-4">
+                    <ul class="flex justify-center space-x-4 text-title">
                         <li>
                             <a
                                 href="#"
-                                target="_blank"
                                 class="hover:text-green-400 duration-200"
+                                ><span class="visually-hidden">YouTube</span
                                 ><i class="fa-brands fa-youtube"></i
                             ></a>
                         </li>
                         <li>
                             <a
                                 href="#"
-                                target="_blank"
                                 class="hover:text-green-400 duration-200"
+                                ><span class="visually-hidden">Facebook</span
                                 ><i class="fa-brands fa-facebook-f"></i
                             ></a>
                         </li>
                         <li>
                             <a
                                 href="#"
-                                target="_blank"
                                 class="hover:text-green-400 duration-200"
+                                ><span class="visually-hidden">Instagram</span
                                 ><i class="fa-brands fa-instagram"></i
                             ></a>
                         </li>
