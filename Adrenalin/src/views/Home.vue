@@ -36,16 +36,20 @@ const workers = ref([
                 </div>
                 <div class="grid md:grid-cols-2 grid-col-1">
                     <img
-                        src="../assets/images/Home/3.jpg "
+                        src="../assets/images/Home/airdyne_bike_row.jpg "
                         class="block brightness-90 object-cover aspect-[4/3]"
                         alt=""
                         loading="lazy"
+                        width="1080"
+                        height="1620"
                     />
                     <img
-                        src="../assets/images/Home/1.jpg "
+                        src="../assets/images/Home/interior_cardio_machines.jpg "
                         class="block brightness-90 object-cover aspect-[4/3]"
                         alt=""
                         loading="lazy"
+                        width="1280"
+                        height="1094"
                     />
                 </div>
             </section>
@@ -64,16 +68,20 @@ const workers = ref([
                 </div>
                 <div class="grid md:grid-cols-2 grid-col-1">
                     <img
-                        src="../assets/images/About/gym6.jpg "
+                        src="../assets/images/About/pullup_assisted_trainer.jpg "
                         class="block brightness-90 object-cover aspect-[4/3]"
                         alt=""
                         loading="lazy"
+                        width="1280"
+                        height="855"
                     />
                     <img
-                        src="../assets/images/Home/2.jpg "
+                        src="../assets/images/Home/indoor_cycling_workout.jpg "
                         class="block brightness-90 object-cover aspect-[4/3]"
                         alt=""
                         loading="lazy"
+                        width="1280"
+                        height="853"
                     />
                 </div>
             </section>
@@ -152,29 +160,37 @@ const workers = ref([
                 </div>
                 <div class="lg:grid grid-cols-2 grid-rows-[auto_auto_auto]">
                     <img
-                        src="../assets/images/Home/4.jpg"
+                        src="../assets/images/Home/changing_room_lockers.jpg"
                         class="brightness-90 w-full object-cover aspect-[3/4]"
                         alt=""
                         loading="lazy"
+                        width="1080"
+                        height="1620"
                     />
                     <img
-                        src="../assets/images/Home/5.jpg"
+                        src="../assets/images/Home/cable_machine_closeup.jpg"
                         class="brightness-90 w-full object-cover aspect-[3/4]"
                         alt=""
                         loading="lazy"
+                        width="1080"
+                        height="1620"
                     />
 
                     <img
-                        src="../assets/images/Home/6.jpg"
+                        src="../assets/images/Home/cafe_counter_barista.jpg"
                         class="col-span-2 brightness-90 w-full object-cover aspect-[4/3]"
                         alt=""
                         loading="lazy"
+                        width="1280"
+                        height="841"
                     />
                     <img
-                        src="../assets/images/Home/9.jpg"
+                        src="../assets/images/Home/relax_zone_single_seat.jpg"
                         class="col-span-2 brightness-90 w-full object-cover aspect-[4/3]"
                         alt=""
                         loading="lazy"
+                        width="1444"
+                        height="1620"
                     />
                 </div>
             </section>

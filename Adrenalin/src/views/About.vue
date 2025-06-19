@@ -15,7 +15,7 @@ import Footer from "@/components/Footer.vue";
         <main>
             <section>
                 <div
-                    class="relative bg-[url('../assets/images/About/1.jpg')] bg-gray-800 bg-cover bg-no-repeat bg-center min-h-[70vh]"
+                    class="relative bg-[url('../assets/images/About/dumbbell_40lb_gym_floor.jpg')] bg-gray-800 bg-cover bg-no-repeat bg-center min-h-[70vh]"
                 >
                     <div
                         class="absolute inset-0 flex justify-center items-center bg-black/70 p-10"
@@ -37,7 +37,7 @@ import Footer from "@/components/Footer.vue";
             <section>
                 <div class="flex md:flex-row flex-col">
                     <img
-                        src="../assets/images/About/gym2.jpg "
+                        src="../assets/images/About/female_running_treadmill.jpg "
                         class="hidden md:block brightness-90 md:w-1/2"
                         alt=""
                         loading="lazy"
@@ -108,22 +108,28 @@ import Footer from "@/components/Footer.vue";
                         class="md:inline-grid flex-none grid grid-cols-3 md:grid-cols-1"
                     >
                         <img
-                            src="../assets/images/About/gym3.jpg "
+                            src="../assets/images/About/pilates_reformer_group_class.jpg "
                             class="brightness-90 w-full md:w-auto h-auto md:max-h-[33vh] object-cover aspect-[4/3]"
                             loading="lazy"
                             alt=""
+                            width="1280"
+                            height="855"
                         />
                         <img
-                            src="../assets/images/About/gym4.jpg "
+                            src="../assets/images/About/personal_training_dumbbell_press.jpg "
                             class="brightness-90 w-full md:w-auto h-auto md:max-h-[33vh] object-cover aspect-[4/3]"
                             loading="lazy"
                             alt=""
+                            width="1280"
+                            height="853"
                         />
                         <img
-                            src="../assets/images/About/gym5.jpg "
+                            src="../assets/images/About/balanced_diet_meal_trio.jpg "
                             class="brightness-90 w-full md:w-auto h-auto md:max-h-[33vh] object-cover aspect-[4/3]"
                             loading="lazy"
                             alt=""
+                            width="1280"
+                            height="961"
                         />
                     </div>
                 </div>
@@ -143,10 +149,12 @@ import Footer from "@/components/Footer.vue";
                         </p>
                     </div>
                     <img
-                        src="../assets/images/About/gym6.jpg "
+                        src="../assets/images/About/pullup_assisted_trainer.jpg "
                         class="block md:order-first brightness-90 md:w-1/2"
                         alt=""
                         loading="lazy"
+                        width="1280"
+                        height="855"
                     />
                 </div>
             </section>
@@ -167,21 +175,27 @@ import Footer from "@/components/Footer.vue";
                     </div>
                     <div class="grid grid-cols-2 md:max-w-1/2">
                         <img
-                            src="../assets/images/About/gym7.jpg "
-                            class="block brightness-90"
+                            src="../assets/images/About/fitness_props_shelf.jpg "
+                            class="block brightness-90 object-contain"
                             alt=""
                             loading="lazy"
+                            width="1080"
+                            height="1620"
                         />
                         <img
-                            src="../assets/images/About/gym9.jpg "
+                            src="../assets/images/About/changing_room_lockers.jpg "
                             class="block brightness-90"
                             alt=""
                             loading="lazy"
+                            width="1080"
+                            height="1620"
                         /><img
-                            src="../assets/images/About/gym8.jpg "
+                            src="../assets/images/About/man_running_treadmill.jpg "
                             class="block col-span-full brightness-90"
                             alt=""
                             loading="lazy"
+                            width="1916"
+                            height="1079"
                         />
                     </div>
                 </div>
