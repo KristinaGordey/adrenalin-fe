@@ -4,6 +4,7 @@ import About from "@/views/About.vue";
 import Login from "@/views/Login.vue";
 import Register from "@/views/Register.vue";
 import Price from "@/views/Price.vue";
+import Schedule from "@/views/Schedule.vue";
 const routes = [
   {
     path: "/",
@@ -29,6 +30,11 @@ const routes = [
     path: "/price",
     name: "Price",
     component: Price,
+  },
+  {
+    path: "/schedule",
+    name: "Schedule",
+    component: Schedule,
   },
 ];
 const router = createRouter({

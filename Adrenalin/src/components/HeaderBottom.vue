@@ -23,6 +23,9 @@
           <div class="text-white hover:text-green-400 duration-200">
             <router-link to="/price">Прайс</router-link>
           </div>
+          <div class="text-white hover:text-green-400 duration-200">
+            <router-link to="/schedule">Расписание</router-link>
+          </div>
         </div>
       </div>
 
