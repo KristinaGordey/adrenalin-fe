@@ -16,6 +16,42 @@ const workers = ref([
   { name: "Олег", description: "Просто Олег" },
   { name: "Олег", description: "Просто Олег" },
 ]);
+const typeTraining = ref([
+  {
+    title: "Силовая тренировка дома",
+    description:
+      "Комплекс из 5 упражнений с собственным весом для укрепления всего тела. Идеально для утреннего бодрящего старта.",
+    price: "Бесплатно",
+  },
+
+  {
+    title: "HIIT для сжигания жира",
+    description:
+      "Интенсивная 20-минутная тренировка, которая ускорит метаболизм и поднимет пульс. Не требует оборудования.",
+    price: "2.99",
+  },
+
+  {
+    title: "Растяжка и мобильность",
+    description:
+      "Мягкая сессия для улучшения гибкости, снятия напряжения и профилактики травм. Подходит для любого уровня.",
+    price: 1.99,
+  },
+
+  {
+    title: "Йога для начинающих",
+    description:
+      "Плавный ввод в практику йоги с фокусом на дыхание и базовые асаны. Помогает снять стресс.",
+    price: "Бесплатно",
+  },
+
+  {
+    title: "Табата: 4 раунда по 4 минуты",
+    description:
+      "Взрывная тренировка в стиле Табата — 20 секунд работы, 10 секунд отдыха. Прокачай силу и выносливость!",
+    price: 3.5,
+  },
+]);
 </script>
 <template>
   <div class="page-container">
@@ -104,11 +140,13 @@ const workers = ref([
             id="trainersCards"
             class="flex gap-x-5 px-10 overflow-x-scroll snap-mandatory snap-x horizontal-scroll"
           >
-            <Workers
+            <Card
               v-for="worker in workers"
               :key="index"
-              :worker="worker"
-            ></Workers>
+              :image="cat"
+              :title="worker.name"
+              :description="worker.description"
+            ></Card>
           </div>
         </div>
       </section>
@@ -130,11 +168,14 @@ const workers = ref([
             id="trainersCards"
             class="flex gap-x-5 px-10 overflow-x-scroll snap-mandatory snap-x horizontal-scroll"
           >
-            <Workers
-              v-for="worker in workers"
+            <Card
+              v-for="type in typeTraining"
               :key="index"
-              :worker="worker"
-            ></Workers>
+              :image="cat"
+              :title="type.title"
+              :description="type.description"
+              :price="type.price"
+            ></Card>
           </div>
         </div>
       </section>
