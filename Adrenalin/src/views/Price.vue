@@ -26,7 +26,7 @@ const trainings = ref([
       <section class="trainings">
         <div class="mx-auto p-5">
           <div class="mb-5">
-            <h1 class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-bold">
+            <h1 class="text-title font-bold">
               <span>Прайс</span>
             </h1>
           </div>
@@ -34,15 +34,11 @@ const trainings = ref([
             id="trainingTypesCards"
             class="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4"
           >
-            <Card
-              v-for="(training, index) in trainings"
+            <TrainingTypeCards
+              v-for="training in trainings"
               :key="index"
-              :title="training.title"
-              :description="training.description"
-              :image="sportcat"
-              :price="training.price"
-              link="#"
-            />
+              :training="training"
+            ></TrainingTypeCards>
           </div>
         </div>
       </section>

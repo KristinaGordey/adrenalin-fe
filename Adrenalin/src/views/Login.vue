@@ -23,20 +23,82 @@ const handleFormSubmit = (data) => {
     </div>
     <main>
       <div
-        class="flex flex-col gap-y-5 mx-auto w-full max-w-lg bg-white p-6 rounded shadow"
+        class="flex flex-col gap-y-5 w-full max-w-md mx-auto bg-white p-6 rounded shadow"
       >
-        <h1 class="text-[clamp(1.5rem,2.083vw,2.5rem)] font-semibold">
-          <span>Авторизация</span>
+        <h1 class="text-title font-semibold">
+          <span>Вход</span>
         </h1>
-        <CustomForm
-          :showEmail="false"
-          :showPhone="false"
-          :titleButton="titleButton"
-          @submit="handleFormSubmit"
-        />
+        <form
+          @submit.prevent="handlesubmit"
+          method="post"
+          class="needs-validation space-y-4"
+          id="login-form"
+          novalidate
+        >
+          <div class="flex flex-col gap-y-5">
+            <div class="flex flex-col gap-y-1">
+              <label for="username" class="font-medium text-gray-700 required"
+                >Имя</label
+              >
+              <input
+                type="text"
+                id="username"
+                name="username"
+                v-model="name"
+                placeholder="Имя"
+                required
+                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-400 focus:border-green-400"
+              />
+              <p class="text-red-600" v-if="nameError" id="error-message">
+                {{ nameError }}
+              </p>
+            </div>
 
-        <div class="hover:text-green-600 hover:underline">
-          <router-link to="/register"> У меня еще нет аккаунта </router-link>
+            <div class="flex flex-col gap-y-1">
+              <label for="password" class="font-medium text-gray-700 required"
+                >Пароль</label
+              >
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Пароль"
+                required
+                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-400 focus:border-green-400"
+              />
+              <p class="text-red-600" v-if="passError" id="error-message">
+                {{ passError }}
+              </p>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <button
+                type="submit"
+                class="border border-gray-300 px-4 py-2 rounded hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-400"
+              >
+                Войти
+              </button>
+              <div class="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  id="isAdminButton"
+                  name="isAdminButton"
+                  value="admin"
+                  class="h-4 aspect-square text-green-400 focus:ring-green-400 border-gray-300 rounded"
+                />
+                <label for="isAdminButton" class="text-gray-700">
+                  Я администратор
+                </label>
+              </div>
+            </div>
+
+            <p class="text-red-600" v-if="error" id="error-message">
+              {{ error }}
+            </p>
+          </div>
+        </form>
+        <div class="hover:text-green-400 hover:underline">
+          У меня еще нет аккаунта
         </div>
       </div>
     </main>
