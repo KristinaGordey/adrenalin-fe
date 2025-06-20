@@ -13,7 +13,7 @@ import Footer from "@/components/Footer.vue";
             <HeaderBottom></HeaderBottom>
         </div>
         <main>
-            <section>
+            <section class="welcome-banner">
                 <div
                     class="relative bg-[url('../assets/images/About/dumbbell_40lb_gym_floor.jpg')] bg-gray-800 bg-cover bg-no-repeat bg-center min-h-[70vh]"
                 >
@@ -26,6 +26,7 @@ import Footer from "@/components/Footer.vue";
                             <h1 class="font-bold text-title">
                                 Добро пожаловать в Adrenalin!
                             </h1>
+
                             <p class="text-gray-300">
                                 Ваше идеальное место для здоровья, силы и
                                 гармонии в самом сердце Минска.
@@ -34,7 +35,7 @@ import Footer from "@/components/Footer.vue";
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="about-location">
                 <div class="flex md:flex-row flex-col">
                     <img
                         src="../assets/images/About/female_running_treadmill.jpg "
@@ -74,7 +75,7 @@ import Footer from "@/components/Footer.vue";
                     referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
             </section>
-            <section>
+            <section class="services-overview">
                 <div class="flex md:flex-row flex-col">
                     <div
                         class="flex flex-col flex-grow justify-center items-center gap-y-2 text-shadow-lg p-10"
@@ -104,12 +105,10 @@ import Footer from "@/components/Footer.vue";
                             </li>
                         </ul>
                     </div>
-                    <div
-                        class="md:inline-grid flex-none grid grid-cols-3 md:grid-cols-1"
-                    >
+                    <div class="flex-none grid md:grid-cols-1 md:max-w-1/2">
                         <img
                             src="../assets/images/About/pilates_reformer_group_class.jpg "
-                            class="brightness-90 w-full md:w-auto h-auto md:max-h-[33vh] object-cover aspect-[4/3]"
+                            class="brightness-90 w-full max-h-[33vh] object-cover"
                             loading="lazy"
                             alt=""
                             width="1280"
@@ -117,7 +116,7 @@ import Footer from "@/components/Footer.vue";
                         />
                         <img
                             src="../assets/images/About/personal_training_dumbbell_press.jpg "
-                            class="brightness-90 w-full md:w-auto h-auto md:max-h-[33vh] object-cover aspect-[4/3]"
+                            class="brightness-90 w-full max-h-[33vh] object-cover"
                             loading="lazy"
                             alt=""
                             width="1280"
@@ -125,7 +124,7 @@ import Footer from "@/components/Footer.vue";
                         />
                         <img
                             src="../assets/images/About/balanced_diet_meal_trio.jpg "
-                            class="brightness-90 w-full md:w-auto h-auto md:max-h-[33vh] object-cover aspect-[4/3]"
+                            class="brightness-90 w-full max-h-[33vh] object-cover"
                             loading="lazy"
                             alt=""
                             width="1280"
@@ -134,7 +133,7 @@ import Footer from "@/components/Footer.vue";
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="trainers-intro">
                 <div class="flex md:flex-row flex-col">
                     <div
                         class="flex flex-col justify-center gap-y-2 text-shadow-lg p-10 text-center"
@@ -150,7 +149,7 @@ import Footer from "@/components/Footer.vue";
                     </div>
                     <img
                         src="../assets/images/About/pullup_assisted_trainer.jpg "
-                        class="block md:order-first brightness-90 md:w-1/2"
+                        class="block md:order-first brightness-90 md:w-1/2 object-cover"
                         alt=""
                         loading="lazy"
                         width="1280"
@@ -158,7 +157,7 @@ import Footer from "@/components/Footer.vue";
                     />
                 </div>
             </section>
-            <section>
+            <section class="facilities-info">
                 <div class="flex md:flex-row flex-col">
                     <div
                         class="flex flex-col justify-center gap-y-2 text-shadow-lg p-10 text-center"
@@ -176,7 +175,7 @@ import Footer from "@/components/Footer.vue";
                     <div class="grid grid-cols-2 md:max-w-1/2">
                         <img
                             src="../assets/images/About/fitness_props_shelf.jpg "
-                            class="block brightness-90 object-contain"
+                            class="block brightness-90 object-cover"
                             alt=""
                             loading="lazy"
                             width="1080"
@@ -184,14 +183,14 @@ import Footer from "@/components/Footer.vue";
                         />
                         <img
                             src="../assets/images/About/changing_room_lockers.jpg "
-                            class="block brightness-90"
+                            class="block brightness-90 object-cover"
                             alt=""
                             loading="lazy"
                             width="1080"
                             height="1620"
                         /><img
                             src="../assets/images/About/man_running_treadmill.jpg "
-                            class="block col-span-full brightness-90"
+                            class="block col-span-full brightness-90 object-cover"
                             alt=""
                             loading="lazy"
                             width="1916"
@@ -200,7 +199,7 @@ import Footer from "@/components/Footer.vue";
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="join-contacts">
                 <div
                     class="flex flex-col justify-center items-center gap-y-5 text-shadow-lg p-10 text-center"
                 >
