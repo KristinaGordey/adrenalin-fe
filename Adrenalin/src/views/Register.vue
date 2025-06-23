@@ -123,7 +123,7 @@ const handleFormSubmit = (data) => {
           </div>
         </form>
 
-        <div class="hover:text-green-600 hover:underline">
+        <div class="hover:text-green-400 hover:underline">
           <router-link to="/login"> У меня уже есть аккаунт </router-link>
         </div>
       </div>

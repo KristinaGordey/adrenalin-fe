@@ -15,7 +15,7 @@ import Footer from "@/components/Footer.vue";
         <main>
             <section class="welcome-banner">
                 <div
-                    class="relative bg-[url('../assets/images/About/dumbbell_40lb_gym_floor.jpg')] bg-gray-800 bg-cover bg-no-repeat bg-center min-h-[70vh]"
+                    class="relative bg-[url('../assets/images/About/dumbbell_40lb_gym_floor.jpg')] bg-gray-900 bg-cover bg-no-repeat bg-center min-h-[70vh]"
                 >
                     <div
                         class="absolute inset-0 flex justify-center items-center bg-black/70 p-10"
@@ -204,7 +204,7 @@ import Footer from "@/components/Footer.vue";
                     class="flex flex-col justify-center items-center gap-y-5 text-shadow-lg p-10 text-center"
                 >
                     <div
-                        class="flex flex-col gap-y-5 p-5 border-b-2 border-black"
+                        class="flex flex-col gap-y-5 p-5 border-gray-900 border-b-2"
                     >
                         <h2 class="font-bold text-title text-center">
                             Присоединяйтесь к Adrenalin и начните путь к лучшей

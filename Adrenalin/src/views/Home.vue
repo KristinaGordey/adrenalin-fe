@@ -71,7 +71,7 @@ const typeTraining = ref([
             <section>
                 <div class="p-10 md:p-15 lg:p-20 text-center">
                     <h1
-                        class="p-5 md:p-10 lg:p-15 border-b-2 border-black font-bold text-title"
+                        class="p-5 md:p-10 lg:p-15 border-gray-900 border-b-2 font-bold text-title"
                     >
                         <span>
                             Adrenalin — фитнес-центр в центре Минска для тех,
@@ -241,7 +241,7 @@ const typeTraining = ref([
                     class="flex flex-col justify-center items-center gap-y-5 p-10 text-center"
                 >
                     <div
-                        class="flex flex-col gap-y-5 p-5 border-b-2 border-black"
+                        class="flex flex-col gap-y-5 p-5 border-gray-900 border-b-2"
                     >
                         <h2 class="font-bold text-title">
                             <span>Решения приводят к результатам</span>

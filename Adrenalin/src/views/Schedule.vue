@@ -6,171 +6,139 @@
             <HeaderBottom></HeaderBottom>
         </div>
         <main>
-            <div class="flex lg:flex-row flex-col gap-4 mx-auto px-4 container">
-                <div
-                    class="flex-1 bg-white shadow p-4 rounded h-full overflow-auto"
-                >
-                    <div class="overflow-x-auto">
-                        <table
-                            class="border border-gray-200 min-w-full border-collapse table-auto"
-                        >
-                            <thead class="bg-gray-800 text-white">
-                                <tr>
-                                    <th
-                                        class="px-4 py-2 border border-gray-300"
-                                    >
-                                        Название
-                                    </th>
-                                    <th
-                                        class="px-4 py-2 border border-gray-300"
-                                    >
-                                        Дата
-                                    </th>
-                                    <th
-                                        class="px-4 py-2 border border-gray-300"
-                                    >
-                                        Время
-                                    </th>
-                                    <th
-                                        class="px-4 py-2 border border-gray-300"
-                                    >
-                                        Тренер
-                                    </th>
-                                    <th
-                                        class="px-4 py-2 border border-gray-300"
-                                    >
-                                        Статус
-                                    </th>
-                                    <th
-                                        class="px-4 py-2 border border-gray-300"
-                                    >
-                                        Добавить
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr
-                                    v-for="training in trainings"
-                                    :key="training.id"
-                                    class="hover:bg-gray-100 cursor-pointer"
-                                >
-                                    <td
-                                        class="px-4 py-2 border border-gray-300"
-                                    >
-                                        {{ training.name }}
-                                    </td>
-                                    <td
-                                        class="px-4 py-2 border border-gray-300"
-                                    >
-                                        {{ training.date }}
-                                    </td>
-                                    <td
-                                        class="px-4 py-2 border border-gray-300"
-                                    >
-                                        {{ training.time }}
-                                    </td>
-                                    <td
-                                        class="px-4 py-2 border border-gray-300"
-                                    >
-                                        {{ training.trainer }}
-                                    </td>
-                                    <td
-                                        class="px-4 py-2 border border-gray-300"
-                                    >
-                                        {{ training.status }}
-                                    </td>
-                                    <td
-                                        class="px-4 py-2 border border-gray-300 text-center"
-                                    >
-                                        <button
-                                            class="bg-blue-500 hover:bg-blue-700 px-3 py-1 rounded font-bold text-white"
-                                            @click="addTraining(training)"
-                                        >
-                                            +
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            <div class="p-5">
+                <div class="mb-5">
+                    <h1 class="font-bold text-title">Расписание</h1>
                 </div>
-
                 <div
-                    class="flex flex-col gap-4 bg-white shadow p-4 rounded w-full lg:w-1/3"
+                    class="flex lg:flex-row flex-col justify-items-stretch gap-y-5 lg:gap-x-5"
                 >
-                    <!--Вынести в компонент дропдаун-->
-                    <div>
-                        <h5 class="mb-2 font-semibold text-lg">
-                            Выберите тренера
-                        </h5>
-                        <div class="relative">
-                            <button
-                                class="px-4 py-2 border border-gray-300 rounded w-full text-left"
-                                @click="toggleDropdown('trainers')"
-                            >
-                                {{ selectedTrainer || "Выберите тренера" }}
-                            </button>
-                            <ul
-                                v-if="dropdowns.trainers"
-                                class="z-10 absolute bg-white mt-1 border border-gray-300 rounded w-full max-h-60 overflow-y-auto"
-                            >
-                                <li
-                                    v-for="trainer in trainers"
-                                    :key="trainer.id"
-                                    class="hover:bg-gray-100 px-4 py-2 cursor-pointer"
-                                    @click="selectTrainer(trainer.name)"
-                                >
-                                    {{ trainer.name }}
-                                </li>
-                            </ul>
+                    <div
+                        class="flex-1/2 bg-white shadow p-5 rounded lg:min-w-[50%]"
+                    >
+                        <div class="relative max-h-[50%] overflow-auto">
+                            <table class="schedule-table">
+                                <thead>
+                                    <tr>
+                                        <th>Название</th>
+                                        <th>Дата</th>
+                                        <th>Время</th>
+                                        <th>Тренер</th>
+                                        <th>Статус</th>
+                                        <th>Добавить</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr
+                                        v-for="training in trainings"
+                                        :key="training.id"
+                                        class="hover:bg-gray-100 cursor-pointer"
+                                    >
+                                        <td>
+                                            {{ training.name }}
+                                        </td>
+                                        <td>
+                                            {{ training.date }}
+                                        </td>
+                                        <td>
+                                            {{ training.time }}
+                                        </td>
+                                        <td>
+                                            {{ training.trainer }}
+                                        </td>
+                                        <td>
+                                            {{ training.status }}
+                                        </td>
+                                        <td>
+                                            <button
+                                                class="hover:bg-gray-300 px-2 border border-gray-700 rounded aspect-square font-bold text-gray-900"
+                                                type="button"
+                                                @click="addTraining(training)"
+                                            >
+                                                <span class="visually-hidden"
+                                                    >Добавить запись</span
+                                                >
+                                                +
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
-                    <div>
-                        <h5 class="mb-2 font-semibold text-lg">
-                            Выберите тип тренировки
-                        </h5>
-                        <div class="relative">
-                            <button
-                                class="px-4 py-2 border border-gray-300 rounded w-full text-left"
-                                @click="toggleDropdown('trainingType')"
-                            >
-                                {{
-                                    selectedTrainingType ||
-                                    "Выберите тип тренировки"
-                                }}
-                            </button>
-                            <ul
-                                v-if="dropdowns.trainingType"
-                                class="z-10 absolute bg-white mt-1 border border-gray-300 rounded w-full max-h-60 overflow-y-auto"
-                            >
-                                <li
-                                    v-for="type in trainingTypes"
-                                    :key="type.id"
-                                    class="hover:bg-gray-100 px-4 py-2 cursor-pointer"
-                                    @click="selectTrainingType(type.name)"
+                    <div
+                        class="flex flex-col flex-1 gap-5 bg-white shadow p-5 rounded"
+                    >
+                        <!--Вынести в компонент дропдаун-->
+                        <div class="flex flex-col gap-y-2">
+                            <h2 class="font-bold">Выберите тренера</h2>
+                            <div class="relative">
+                                <button
+                                    class="px-5 py-2 border border-gray-300 rounded w-full text-left"
+                                    @click="toggleDropdown('trainers')"
                                 >
-                                    {{ type.name }}
-                                </li>
-                            </ul>
+                                    {{ selectedTrainer || "Выберите тренера" }}
+                                </button>
+                                <ul
+                                    v-if="dropdowns.trainers"
+                                    class="z-10 absolute bg-white border border-gray-300 rounded w-full"
+                                >
+                                    <li
+                                        v-for="trainer in trainers"
+                                        :key="trainer.id"
+                                        class="hover:bg-gray-100 px-5 py-2 cursor-pointer"
+                                        @click="selectTrainer(trainer.name)"
+                                    >
+                                        {{ trainer.name }}
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <!---->
 
-                    <div>
-                        <h5 class="mb-2 font-semibold text-lg">
-                            Выберите дату
-                        </h5>
-                        <!--<VCalendar />-->
-                        <VDatePicker
-                            :color="selectedColor"
-                            :attributes="attrs"
-                            v-model="date"
-                        />
+                        <div class="flex flex-col gap-y-2">
+                            <h2 class="font-bold">Выберите тип тренировки</h2>
+                            <div class="relative">
+                                <button
+                                    class="px-5 py-2 border border-gray-300 rounded w-full text-left"
+                                    @click="toggleDropdown('trainingType')"
+                                >
+                                    {{
+                                        selectedTrainingType ||
+                                        "Выберите тип тренировки"
+                                    }}
+                                </button>
+                                <ul
+                                    v-if="dropdowns.trainingType"
+                                    class="z-10 absolute bg-white mt-1 border border-gray-300 rounded w-full max-h-60 overflow-y-auto"
+                                >
+                                    <li
+                                        v-for="type in trainingTypes"
+                                        :key="type.id"
+                                        class="hover:bg-gray-100 px-5 py-2 cursor-pointer"
+                                        @click="selectTrainingType(type.name)"
+                                    >
+                                        {{ type.name }}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!---->
+
+                        <div class="flex flex-col gap-y-2">
+                            <h2 class="font-bold">Выберите дату</h2>
+                            <!--<VCalendar />-->
+                            <VDatePicker
+                                :color="selectedColor"
+                                :attributes="attrs"
+                                v-model="date"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
+        <div class="footer-component"><Footer></Footer></div>
     </div>
 </template>
 

@@ -45,7 +45,7 @@
             <div class="relative">
                 <button
                     @click="toggleDropdown"
-                    class="m-1 px-2 py-1 border border-gray-400 hover:border-green-400 rounded hover:text-green-400 duration-200"
+                    class="m-1 px-2 py-1 border border-gray-700 hover:border-green-400 rounded hover:text-green-400 duration-200"
                 >
                     Аккаунт
                 </button>

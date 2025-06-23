@@ -192,13 +192,18 @@ svg * {
 }
 
 :root {
+    --color-dark: #111827;
+    --color-accent: #4ade80;
+    --color-light: #ffffff;
+    --color-dark-gray: #374151;
+    --color-medium-gray: #d1d5db;
+    --color-light-gray: #f3f4f6;
 }
 
 body {
     font-size: clamp(1rem, 1.25vw, 1.5rem);
     font-family: "Verdana", sans-serif;
     font-optical-sizing: auto;
-    background-color: var(--bg-color);
 }
 
 .horizontal-scroll::-webkit-scrollbar {
@@ -219,6 +224,46 @@ address {
 
 .card {
     flex: 1 1 0;
+}
+.schedule-table {
+    vertical-align: top;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.schedule-table thead {
+    background-color: var(--color-dark);
+    border-color: var(--color-dark-gray);
+    color: var(--color-light);
+}
+
+.schedule-table th {
+    padding-block: 8px;
+    padding-inline: 20px;
+    border-color: var(--color-dark-gray);
+}
+
+.schedule-table td {
+    padding-block: 8px;
+    padding-inline: 20px;
+    border: 1px solid var(--color-medium-gray);
+}
+
+.vc-container,
+.vs-pane-container,
+.vc-pane,
+.vc-header,
+.vc-weeks,
+.vs-weekdays,
+.vs-week,
+.vc-day,
+.vc-day-content,
+.vc-arrows {
+    font-family: inherit !important;
+    font-size: inherit !important;
+    width: 100% !important;
+    max-width: 400px;
 }
 
 .visually-hidden {
