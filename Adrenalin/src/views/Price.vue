@@ -17,11 +17,10 @@ const trainings = ref([
 </script>
 <template>
   <div class="page-container">
-    <div class="header-component">
-      <HeaderTop></HeaderTop>
-      <HeaderMiddle></HeaderMiddle>
-      <HeaderBottom></HeaderBottom>
-    </div>
+    <HeaderTop></HeaderTop>
+    <HeaderMiddle></HeaderMiddle>
+    <HeaderBottom></HeaderBottom>
+
     <main>
       <div class="mx-auto p-5">
         <div class="mb-5">
@@ -33,14 +32,11 @@ const trainings = ref([
           id="trainingTypesCards"
           class="gap-5 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4"
         >
-          <Card
+          <TrainingTypeCards
             v-for="training in trainings"
             :key="index"
-            :image="sportcat"
-            :title="training.title"
-            :description="training.description"
-            :price="training.price"
-          ></Card>
+            :training="training"
+          ></TrainingTypeCards>
         </div>
       </div>
     </main>

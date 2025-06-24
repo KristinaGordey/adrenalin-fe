@@ -62,11 +62,10 @@ const typeTraining = ref([
 </script>
 <template>
     <div class="page-container">
-        <div class="header-component">
-            <HeaderTop></HeaderTop>
-            <HeaderMiddle></HeaderMiddle>
-            <HeaderBottom></HeaderBottom>
-        </div>
+        <HeaderTop></HeaderTop>
+        <HeaderMiddle></HeaderMiddle>
+        <HeaderBottom></HeaderBottom>
+
         <main>
             <section>
                 <div class="p-10 md:p-15 lg:p-20 text-center">
