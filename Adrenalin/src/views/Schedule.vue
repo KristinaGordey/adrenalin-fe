@@ -1,10 +1,9 @@
 <template>
     <div class="page-container">
-        <div class="header-component">
-            <HeaderTop></HeaderTop>
-            <HeaderMiddle></HeaderMiddle>
-            <HeaderBottom></HeaderBottom>
-        </div>
+        <HeaderTop></HeaderTop>
+        <HeaderMiddle></HeaderMiddle>
+        <HeaderBottom></HeaderBottom>
+
         <main>
             <div class="p-5">
                 <div class="mb-5">
