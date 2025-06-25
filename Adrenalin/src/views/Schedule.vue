@@ -66,9 +66,7 @@
                         </div>
                     </div>
 
-                    <div
-                        class="flex flex-col flex-1 gap-5 bg-white shadow p-5 rounded"
-                    >
+                    <div class="flex flex-col flex-1 gap-5 bg-white shadow p-5">
                         <!--Вынести в компонент дропдаун-->
                         <div class="flex flex-col gap-y-2">
                             <h2 class="font-bold">Выберите тренера</h2>

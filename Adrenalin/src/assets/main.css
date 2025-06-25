@@ -225,6 +225,7 @@ address {
 .card {
     flex: 1 1 0;
 }
+
 .schedule-table {
     vertical-align: top;
     width: 100%;

@@ -81,7 +81,7 @@ const typeTraining = ref([
                 <div class="grid md:grid-cols-2 grid-col-1">
                     <img
                         src="../assets/images/Home/airdyne_bike_row.jpg "
-                        class="block brightness-90 object-cover aspect-[4/3]"
+                        class="block brightness-90 w-full object-cover aspect-[4/3]"
                         alt=""
                         loading="lazy"
                         width="1080"
@@ -89,7 +89,7 @@ const typeTraining = ref([
                     />
                     <img
                         src="../assets/images/Home/interior_cardio_machines.jpg "
-                        class="block brightness-90 object-cover aspect-[4/3]"
+                        class="block brightness-90 w-full object-cover aspect-[4/3]"
                         alt=""
                         loading="lazy"
                         width="1280"
@@ -148,13 +148,17 @@ const typeTraining = ref([
                     id="trainersCards"
                     class="flex gap-x-5 px-10 py-2 overflow-x-scroll snap-mandatory snap-x horizontal-scroll"
                 >
-                    <Card
+                    <div
                         v-for="worker in workers"
                         :key="index"
-                        :image="cat"
-                        :title="worker.name"
-                        :description="worker.description"
-                    ></Card>
+                        class="min-w-[330px] card"
+                    >
+                        <Card
+                            :image="cat"
+                            :title="worker.name"
+                            :description="worker.description"
+                        />
+                    </div>
                 </div>
             </section>
             <section>
@@ -172,17 +176,21 @@ const typeTraining = ref([
                 </div>
 
                 <div
-                    id="trainersCards"
+                    id="trainingTypesCards"
                     class="flex gap-x-5 px-10 py-2 overflow-x-scroll snap-mandatory snap-x horizontal-scroll"
                 >
-                    <Card
+                    <div
                         v-for="type in typeTraining"
-                        :key="index"
-                        :image="cat"
-                        :title="type.title"
-                        :description="type.description"
-                        :price="type.price"
-                    ></Card>
+                        :key="type.id"
+                        class="min-w-[330px] card"
+                    >
+                        <Card
+                            :image="cat"
+                            :title="type.title"
+                            :description="type.description"
+                            :price="type.price"
+                        />
+                    </div>
                 </div>
             </section>
             <section>

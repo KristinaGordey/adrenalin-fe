@@ -1,7 +1,7 @@
 <template>
-    <article class="min-w-[350px] card">
+    <article class="h-full">
         <div
-            class="bg-white shadow hover:shadow-lg p-5 rounded h-full duration-200"
+            class="bg-white shadow hover:shadow-lg p-5 border border-gray-300 rounded h-full duration-200"
         >
             <div class="flex flex-col justify-between gap-y-5 h-full">
                 <div class="flex flex-col flex-none gap-y-3">
